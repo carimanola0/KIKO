@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gloss Kiko Milano - Edición Importada</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
   
   <style>
-
     .nombretitulo {
   font-family: "Playwrite MX Guides", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-    
+    .nombretitulo {
+      font-family: "Playwrite MX Guides", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
     :root {
       --main-color: #f7dbe6;
       --accent-color: #cc2e5d;
@@ -26,21 +32,157 @@
       --font-title: 'Playfair Display', serif;
       --font-body: 'Poppins', sans-serif;
     }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: var(--font-body); background: #fff; color: var(--text-color); }
-    header { background-color: var(--main-color); padding: 60px 20px 40px; text-align: center; }
-    header h1 { font-family: var(--font-title); font-size: 3em; color: var(--accent-color); margin-bottom: 10px; }
+
+    header {
+      background-color: var(--main-color);
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: var(--font-title);
+      font-size: 3em;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
     header p { font-size: 1.1em; color: #5c5c5c; }
-    .product-section { max-width: 900px; margin: 40px auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 0 20px; }
-    .product-image { flex: 1; text-align: center; min-width: 280px; }
-    .product-image img { width: 100%; max-width: 400px; border-radius: 16px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); }
-    .product-info { flex: 1; min-width: 300px; padding: 20px; }
-    .product-info h2 { font-family: var(--font-title); font-size: 2em; margin-bottom: 15px; }
-    .product-info p { font-size: 1em; margin-bottom: 20px; line-height: 1.6; }
-    .price { font-size: 1.5em; font-weight: bold; color: var(--accent-color); margin-bottom: 25px; }
-    .whatsapp-button { background-color: var(--accent-color); color: white; padding: 14px 28px; font-size: 1em; border: none; border-radius: 30px; text-decoration: none; transition: background 0.3s ease; display: inline-block; }
-    .whatsapp-button:hover { background-color: #b82652; }
-    footer { text-align: center; padding: 40px 20px; font-size: 0.9em; color: #777; background-color: #fafafa; }
+
+    .product-section {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .product-image {
+      flex: 1;
+      text-align: center;
+      min-width: 280px;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .product-info h2 {
+      font-family: var(--font-title);
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .product-info p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: var(--accent-color);
+      margin: 25px 0;
+    }
+
+    .whatsapp-button {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 14px 28px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #b82652;
+    }
+
+    /* 🎨 Swatches de color */
+    .color-swatches {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .swatch {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      cursor: default;
+    }
+
+    .swatch.glitter {
+      background: radial-gradient(circle at 30% 30%, #ffb6c1, #ff69b4);
+      background-size: 200% 200%;
+      animation: glitter 2s infinite linear;
+    }
+
+    @keyframes glitter {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 👩‍💼 Sección de la vendedora */
+    .seller-info {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #fff0f5;
+      margin-top: 40px;
+      border-top: 1px solid #eac6d3;
+    }
+
+    .seller-info h3 {
+      font-family: var(--font-title);
+      font-size: 1.5em;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    .seller-info p {
+      font-size: 1em;
+      color: #4d4d4d;
+      margin: 4px 0;
+    }
+
+    .seller-info a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .seller-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #777;
+      background-color: #fafafa;
+    }
+
     @media (max-width: 768px) {
       .product-section { flex-direction: column; }
       header h1 { font-size: 2.2em; }
@@ -65,20 +207,46 @@
         Directo desde Europa, este gloss realza tus labios con un brillo seductor y fórmula suave.
         Ideal para uso diario o para eventos especiales. ¡Sé una de las pocas en Colombia en tenerlo!
       </p>
-       <div class="color-swatches">
-        <div class="swatch" style="background: #ffe4ec;" title="Rosa Pastel"></div>
-        <div class="swatch" style="background: #ffb6c1;" title="Rosa Claro"></div>
-        <div class="swatch" style="background: #ff69b4;" title="Rosa Intenso"></div>
-        <div class="swatch" style="background: #db7093;" title="Rosa Medio"></div>
-        <div class="swatch" style="background: #c71585;" title="Rosa Fucsia"></div>
-        <div class="swatch glitter" title="Brillo Rosa Claro"></div>
-        <div class="swatch glitter" title="Brillo Rosa Fucsia"></div>
-      </div>
+
+      <!-- 🎨 Tonos rosados clickeables -->
+<div class="color-swatches">
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Rosa%20Pastel%20✨" target="_blank" title="Rosa Pastel">
+    <div class="swatch" style="background: #ffe4ec;"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Rosa%20Claro%20✨" target="_blank" title="Rosa Claro">
+    <div class="swatch" style="background: #ffb6c1;"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Rosa%20Intenso%20✨" target="_blank" title="Rosa Intenso">
+    <div class="swatch" style="background: #ff69b4;"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Rosa%20Medio%20✨" target="_blank" title="Rosa Medio">
+    <div class="swatch" style="background: #db7093;"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Rosa%20Fucsia%20✨" target="_blank" title="Rosa Fucsia">
+    <div class="swatch" style="background: #c71585;"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Brillo%20Rosa%20Claro%20✨" target="_blank" title="Brillo Rosa Claro">
+    <div class="swatch glitter"></div>
+  </a>
+  <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20tono%20Brillo%20Rosa%20Fucsia%20✨" target="_blank" title="Brillo Rosa Fucsia">
+    <div class="swatch glitter"></div>
+  </a>
+</div>
+
+
       <div class="price">$45.000 COP</div>
       <a href="https://wa.me/573154819590?text=Hola,%20quiero%20comprar%20el%20gloss%20Kiko%20Milano" class="whatsapp-button" target="_blank">
         Comprar por WhatsApp
       </a>
     </div>
+  </section>
+
+  <!-- 👩‍💼 Información personal de Mariana -->
+  <section class="seller-info">
+    <h3>Vendedora autorizada</h3>
+    <p><strong>Mariana Ordoñez</strong></p>
+    <p>📞 <a href="https://wa.me/573154819590" target="_blank">315 481 9590</a></p>
+    <p>📧 <a href="mailto:mopatino@iegabo.edu.co">mopatino@iegabo.edu.co</a></p>
   </section>
 
   <footer>
@@ -87,7 +255,3 @@
 
 </body>
 </html>
-
-
-
-
